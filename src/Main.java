@@ -20,7 +20,7 @@ public class Main {
             scanner.nextLine(); // Doesn't work without this line, no idea why.
             /** Exception in thread "main" java.util.InputMismatchException **/
 
-            // So user would be displayed Student 1 instead of Student 0
+            // (i+1) So user would be displayed Student 1 instead of Student 0
 
             System.out.println("Enter student " + (i+1) + " name: ");
             String studentName = scanner.nextLine();
