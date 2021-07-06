@@ -24,8 +24,14 @@ public class Main {
             // So user would be displayed Student 1 instead of Student 0
             int actualStudent = i + 1;
 
-            System.out.println("Enter student " + actualStudent + "\n name \n age \n hair color");
-            students[i] = new Student(scanner.nextLine(), scanner.nextInt(), scanner.next());
+            System.out.println("Enter student " + actualStudent + " name: ");
+            String studentName = scanner.nextLine();
+            System.out.println("Enter student " + actualStudent + " age: ");
+            int studentAge = scanner.nextInt();
+            System.out.println("Enter student " + actualStudent + " hair color: ");
+            String studentHairColor = scanner.next();
+
+            students[i] = new Student(studentName, studentAge, studentHairColor);
 
             // Adds up only the ages the user enters.
             agesSum += students[i].getAge();
