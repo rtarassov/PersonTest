@@ -22,13 +22,12 @@ public class Main {
             /** Exception in thread "main" java.util.InputMismatchException **/
 
             // So user would be displayed Student 1 instead of Student 0
-            int actualStudent = i + 1;
 
-            System.out.println("Enter student " + actualStudent + " name: ");
+            System.out.println("Enter student " + (i+1) + " name: ");
             String studentName = scanner.nextLine();
-            System.out.println("Enter student " + actualStudent + " age: ");
+            System.out.println("Enter student " + (i+1) + " age: ");
             int studentAge = scanner.nextInt();
-            System.out.println("Enter student " + actualStudent + " hair color: ");
+            System.out.println("Enter student " + (i+1) + " hair color: ");
             String studentHairColor = scanner.next();
 
             students[i] = new Student(studentName, studentAge, studentHairColor);
