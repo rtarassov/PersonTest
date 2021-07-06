@@ -1,7 +1,7 @@
 # PersonTest
 Students array with user input
 
-# Write a program creates an object of a person. User can state how many people to create
+# Write a program that creates an object of a person. User can state how many people to create
 
 # Use the object to create multiple persons with the following attributes based on user's input
  
