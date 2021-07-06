@@ -14,8 +14,7 @@ public class Main {
         Student[] students = new Student[numberOfStudents];
 
 
-        // TODO: make loop work like: - ask name - enter name, ask age - enter age
-        // TODO: not like: - ask name, age ... - enter name, age ...
+
         // Makes user fill the array with name, age and hair color.
         for (int i = 0; i < students.length; i++) {
             scanner.nextLine(); // Doesn't work without this line, no idea why.
