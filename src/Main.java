@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -21,7 +20,6 @@ public class Main {
             /** Exception in thread "main" java.util.InputMismatchException **/
 
             // (i+1) So user would be displayed Student 1 instead of Student 0
-
             System.out.println("Enter student " + (i+1) + " name: ");
             String studentName = scanner.nextLine();
             System.out.println("Enter student " + (i+1) + " age: ");
@@ -35,11 +33,11 @@ public class Main {
             agesSum += students[i].getAge();
         }
 
-        System.out.println('\n' + "This is your class of " + students.length + '\n' + Arrays.toString(students) + '\n');
+        System.out.println("This is your class of " + students.length + '\n' + Arrays.toString(students) + '\n');
         System.out.println("The sum of above ages is: " + agesSum);
         // Makes the studentsAge object to use studentAverageAge
         Average studentsAge = new Average();
         System.out.println("The average age of " + students.length + " students is: " +
-                studentsAge.studentAverageAge(agesSum, students.length));
+                studentsAge.averageAge(students));
     }
 }

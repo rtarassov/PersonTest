@@ -1,7 +1,11 @@
 public class Average {
 
-    public double studentAverageAge(double agesSum, int amountOfPeople) {
-        double averageAge = agesSum/amountOfPeople;
-        return averageAge;
+    public double averageAge(Student[] yourArray) {
+        double agesSum = 0;
+        for (int i = 0; i < yourArray.length; i++) {
+            agesSum += yourArray[i].getAge();
+        }
+
+        return agesSum / yourArray.length;
     }
 }
